@@ -6,7 +6,7 @@ using System.IO.Ports;
 public class ArduinoWatcherScript : MonoBehaviour {
 
     SerialPort ArduinoPort = new SerialPort("COM3", 9600);
-    public int potentiometerValue;
+    public float potentiometerValue;
 
     // Use this for initialization
     void Start()
@@ -21,7 +21,7 @@ public class ArduinoWatcherScript : MonoBehaviour {
         if (ArduinoPort.IsOpen)
             try
             {
-                potentiometerValue = int.Parse(ArduinoPort.ReadLine());
+                potentiometerValue = float.Parse(ArduinoPort.ReadLine());
             }
             catch (System.Exception)
             {

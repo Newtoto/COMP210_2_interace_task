@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour {
 
+    // Arduino values to detect reload
+    public GameObject ArduinoWatcher;
+    public float FromArduino;
+
     private bool loaded = false;
 
     // Used to only detect axis
@@ -84,6 +88,9 @@ public class GunController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+        // Get potentiometer value
+        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
+
         getAxisInputs();
 
         // Detect firing input
@@ -92,7 +99,7 @@ public class GunController : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (reloadPressed)
+        if (FromArduino > 950)
         {
             reload();
         }
