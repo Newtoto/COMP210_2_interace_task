@@ -5,7 +5,7 @@ I plan on making a rooftop sniping VR experience, with a board and tracked gun a
 <li> A board to simulate the edge of the rooftop.</li>
 <li> A real life tracked gun model to give tactile feedback for the gun game object.</li>
 <li> A reload which can be pulled back and will have the position tracked in game.</li>
-<li> A physical catch which with then release on firing to give the gun kickback.</li>
+<li> A physical catch which with then release on firing to give the gun kickback. This will also give audio feedback without having to implement it in the game.</li>
 <li> A cloth or netting which the player puts over themselves.</li>
 <li> A standing fan to blow wind at the player to mimic the wind on a rooftop.</li>
 <li> Wind noises.</li>
