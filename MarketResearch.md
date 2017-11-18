@@ -1,4 +1,4 @@
-# Market research
+# Market Research and Full Proposition
 
 ## Walk the Plank - Fear of Heights
 In this VR experience, participants are taken up in a lift to the top of a building where there is a thin plank extruding out over the edge.
@@ -21,7 +21,7 @@ Offering players more real world feedback aids immersion as shown by the plank e
 * "Scale is very important for compelling VR experiences"
 Making sure objects are the correct size will be a focus.
 * "it’s essential to consider that your players can look anywhere they like"
-Since a sniper would be covering up, this could be accounted for by making the view behind the player of some kind of fabric.
+Since a sniper would be covering up, this could be accounted for by making the view behind the player of some kind of fabric. This could also be something that I could incorporate with real tactile feedback with a cloth the player can put over their head while playing.
 * "Bring as much of the player as possible into the VR experience  – head, hands and body, if possible"
 Having hands on the gun when held would aid immersion.
 * "Don’t leave them feeling sick or dizzy"
@@ -36,3 +36,17 @@ I will have to do further research into VR nausea to avoid this.
 
 ## <a href = "https://www.vive.com/uk/vive-tracker/">Vive Tracker</a>
 The vive tracker allows for the tracking of any object it is attatched to. In the context of my game, this would enable me to use a Nerf gun or similar, track it, and have it appear inside my VR game. This would mean the player would get the physical feedback of the whole gun, improving immersion.
+
+## Guns in VR
+For most VR gun games involving guns, such as <a href="http://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/">Hot Dogs, Horseshoes and Handgrenades</a>, and <a href="http://store.steampowered.com/app/617830/SUPERHOT_VR/">Super Hot VR</a>, the standard vive controllers are used. This means that reloading and firing a gun only offers vibration as feedback. For my experience, it can also be fiddily to operate. Using the VR tracker on a real life gun model will give fully tactile feedback for reloading. The vibration feedback that is usually found in shooting VR games feels a bit unrealistic. This is why I propose to have a physical mechanism inside the gun which fires a projectile forward, giving the gun a more realistic feeling kickback.
+
+## The VR Experience Proposition
+I plan on making a rooftop sniping VR experience, with a board and tracked gun as the foundation of the game. This will give the feeling of the edge of the building, envoking fear in users, aiding the immersive experience. To get the most immersive experience possible, I plan to account for as much feedback as I can.
+<p>The feedback that I plan on offering will be:</p>
+* A board to simulate the edge of the rooftop.
+* A real life tracked gun model to give tactile feedback for the gun game object.
+* A reload which can be pulled back and will have the position tracked in game.
+* A physical catch which with then release on firing to give the gun kickback.
+* A cloth or netting which the player puts over themselves.
+* A standing fan to blow wind at the player to mimic the wind on a rooftop.
+* Wind noises.
