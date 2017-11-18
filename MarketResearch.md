@@ -35,3 +35,4 @@ I will have to do further research into VR nausea to avoid this.
 * Interaction: Similar to the previous point, there are uses for VR such as 3D moddeling, or interacting with 3D data visualisations. I do not have any data that would be valuble to represent in 3D space. Another example of an application of VR is <a href = "https://www.unit9.com/project/samsung-bedtime-vr-stories/">VR Bedtime Stories</a>, where a parent can connect with their child in VR an read them a bedtime story when they're away from home.
 
 ## <a href = "https://www.vive.com/uk/vive-tracker/">Vive Tracker</a>
+The vive tracker allows for the tracking of any object it is attatched to. In the context of my game, this would enable me to use a Nerf gun or similar, track it, and have it appear inside my VR game. This would mean the player would get the physical feedback of the whole gun, improving immersion.
