@@ -1,6 +1,6 @@
 # Market research
 
-## Walk the plank
+## Walk the Plank - Fear of Heights
 In this VR experience, participants are taken up in a lift to the top of a building where there is a thin plank extruding out over the edge.
 <p>A board is used in reality in order to give the sensation of the edges.
 Giving players this tactile response to the VR world makes it more realistic and it feels like they're really on a high plank.
