@@ -64,3 +64,9 @@ I plan on making a rooftop sniping VR experience, with a board and tracked gun a
 <li> A standing fan to blow wind at the player to mimic the wind on a rooftop.</li>
 <li> Wind noises.</li>
 </ul>
+
+### Electronics
+* Vive headset
+* Vive tracker, for tracking gun model
+* Arduino and sliding potentiometer, for tracking where the reload is.
+* Trigger button, for sending fire input to the tracker and releasing the mechanism.
