@@ -1,4 +1,4 @@
-# Market Research and Full Proposition
+# Market Research
 
 ## Walk the Plank - Fear of Heights
 In this VR experience, participants are taken up in a lift to the top of a building where there is a thin plank extruding out over the edge.
@@ -51,22 +51,3 @@ The vive tracker allows for the tracking of any object it is attatched to. In th
 
 ## Guns in VR
 For most VR gun games involving guns, such as <a href="http://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/">Hot Dogs, Horseshoes and Handgrenades</a>, and <a href="http://store.steampowered.com/app/617830/SUPERHOT_VR/">Super Hot VR</a>, the standard vive controllers are used. This means that reloading and firing a gun only offers vibration as feedback. For my experience, it can also be fiddily to operate. Using the VR tracker on a real life gun model will give fully tactile feedback for reloading. The vibration feedback that is usually found in shooting VR games feels a bit unrealistic. This is why I propose to have a physical mechanism inside the gun which fires a projectile forward, giving the gun a more realistic feeling kickback.
-
-## The VR Experience Proposition
-I plan on making a rooftop sniping VR experience, with a board and tracked gun as the foundation of the game. This will give the feeling of the edge of the building, envoking fear in users, aiding the immersive experience. To get the most immersive experience possible, I plan to account for as much feedback as I can.
-<p>The feedback that I plan on offering will be:</p>
-<ul>
-<li> A board to simulate the edge of the rooftop.</li>
-<li> A real life tracked gun model to give tactile feedback for the gun game object.</li>
-<li> A reload which can be pulled back and will have the position tracked in game.</li>
-<li> A physical catch which with then release on firing to give the gun kickback.</li>
-<li> A cloth or netting which the player puts over themselves.</li>
-<li> A standing fan to blow wind at the player to mimic the wind on a rooftop.</li>
-<li> Wind noises.</li>
-</ul>
-
-### Electronics
-* Vive headset
-* Vive tracker, for tracking gun model
-* Arduino and sliding potentiometer, for tracking where the reload is.
-* Trigger button, for sending fire input to the tracker and releasing the mechanism.
