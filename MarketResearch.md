@@ -32,4 +32,6 @@ I will have to do further research into VR nausea to avoid this.
 * Communication: Backs up the importance of 3D audio from before, but uses it more in the context of a online social VR experience, which is way beyond the scope of this project.
 * Immersion: VR is said to have had real world impacts on people such as increased dontations to charity and relieving drug addiction It has also been used in advertising Thomas Cook holidays, and Marriot hotels. I don't plan on changing the world with this VR experience since the psychological research that would be required to do it competantly is beyond the time frame.
 * Flexibility: Real world applications such as interior design can be aided by VR, although this is an interesting use, is tricky to offer physical feedback for user-created worlds.
-* Interaction: Similar to the previous point, there are uses for VR such as 3D moddeling, or interacting with 3D data visualisations. I do not have any data that would be valuble to represent in 3D space.
+* Interaction: Similar to the previous point, there are uses for VR such as 3D moddeling, or interacting with 3D data visualisations. I do not have any data that would be valuble to represent in 3D space. Another example of an application of VR is <a href = "https://www.unit9.com/project/samsung-bedtime-vr-stories/">VR Bedtime Stories</a>, where a parent can connect with their child in VR an read them a bedtime story when they're away from home.
+
+## <a href = "https://www.vive.com/uk/vive-tracker/">Vive Tracker</a>
