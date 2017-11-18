@@ -2,12 +2,12 @@
 
 ## Walk the plank
 In this VR experience, participants are taken up in a lift to the top of a building where there is a thin plank extruding out over the edge.
-A board is used in reality in order to give the sensation of the edges.
+<p>A board is used in reality in order to give the sensation of the edges.
 Giving players this tactile response to the VR world makes it more realistic and it feels like they're really on a high plank.
-This VR experience playes on the sense of fear of heights and gives very obvious involuntary participant reactions.
-<a href = "https://www.youtube.com/watch?v=zhljsCx6Yiw">Quick video of many participants showing their fear of heights.</a>
-<a href = "https://www.youtube.com/watch?v=zyNsoL-6JwI">Full playthrough of the game in which we can see the player going up in a lift.</a>
-I plan on taking the barebones of this concept where the player is high up on a building and is able to feel and look over the edge.
+This VR experience playes on the sense of fear of heights and gives very obvious involuntary participant reactions.</p>
+* <a href = "https://www.youtube.com/watch?v=zhljsCx6Yiw">Quick video of many participants showing their fear of heights.</a>
+* <a href = "https://www.youtube.com/watch?v=zyNsoL-6JwI">Full playthrough of the game in which we can see the player going up in a lift.</a>
+<p>I plan on taking the barebones of this concept where the player is high up on a building and is able to feel and look over the edge.</p>
 
 ## <a href = "http://www.develop-online.net/tutorials/develop-s-top-tips-designing-for-vr/0216407"> Develop's Top Tips: Designing for VR</a>
 * "Instead of just trying to recreate real life, we should create what we can’t in reality"
