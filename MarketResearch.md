@@ -34,6 +34,18 @@ I will have to do further research into VR nausea to avoid this.
 * Flexibility: Real world applications such as interior design can be aided by VR, although this is an interesting use, is tricky to offer physical feedback for user-created worlds.
 * Interaction: Similar to the previous point, there are uses for VR such as 3D moddeling, or interacting with 3D data visualisations. I do not have any data that would be valuble to represent in 3D space. Another example of an application of VR is <a href = "https://www.unit9.com/project/samsung-bedtime-vr-stories/">VR Bedtime Stories</a>, where a parent can connect with their child in VR an read them a bedtime story when they're away from home.
 
+### Sickness in VR
+From the colaborative Games Academy research on <a href = "https://github.com/Falmouth-Games-Academy/ga-research-wiki/wiki/CyberSickness">cyber sickness</a>, I have noted possible causes of cyber sickness and how I plan to avoid them.
+<ul>
+  <li>Acceleration: The player will be in a fixed sniping position for all, or the majority of the experience.</li>
+  <li>Degree of control: The player will have full controll over the camera movement through the headset.</li>
+  <li>Duration of play time: This will be a short experience, so this shouldn't be an issue. It is advised for users to remove the headset and take a break if they are feeling nauseous.</li>
+  <li>Field of view: This is a hardware limitation, but I plan on using the vive headset as opposed to google cardboard since it offers a wider field of view.</li>
+  <li>Jumping movements: The planned experience does not call for this type of movement.</li>
+  <li>Latency: Partially a hardware limitation, although I will try and optimise the experience in order to keep movement and input lag low.</li>
+  <li>Sensory overload: The virtual play-space will be on a rooftop so it will be open. I will only include a limited number of other buildings to have game content based around. Having a "cloth" over the player in the game will also reduce the sensory input from behind the player.</li>
+</ul>
+
 ## <a href = "https://www.vive.com/uk/vive-tracker/">Vive Tracker</a>
 The vive tracker allows for the tracking of any object it is attatched to. In the context of my game, this would enable me to use a Nerf gun or similar, track it, and have it appear inside my VR game. This would mean the player would get the physical feedback of the whole gun, improving immersion.
 
