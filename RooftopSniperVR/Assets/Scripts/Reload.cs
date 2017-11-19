@@ -8,9 +8,11 @@ public class Reload : MonoBehaviour {
     public float FromArduino;
     //private float PreviousPotentiometerValue;
     public Vector3 TargetPosition;
-    
+
+    float MinArduinoValue = 70; // Only accept values above 70 to avoid most value jumping
+
     // Use this for initialization
-	void Start () {
+    void Start () {
         FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
         //PreviousPotentiometerValue = FromArduino;
     }
@@ -19,11 +21,11 @@ public class Reload : MonoBehaviour {
 	void Update () {
         FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
 
-        if (FromArduino % 2 == 0)
+        if (FromArduino % 2 == 0 && FromArduino > MinArduinoValue)
         {
             TargetPosition = new Vector3(0.0f, 0.0f, FromArduino / 8000);
 
-            gameObject.transform.localPosition += TargetPosition - gameObject.transform.localPosition;
+            gameObject.transform.localPosition -= TargetPosition + gameObject.transform.localPosition;
         }
 
         //PreviousPotentiometerValue = FromArduino;

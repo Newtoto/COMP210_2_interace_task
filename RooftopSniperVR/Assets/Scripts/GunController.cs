@@ -12,11 +12,12 @@ public class GunController : MonoBehaviour {
 
     // Used to only detect axis
     private bool shootPressed = false;
-    private bool reloadPressed = false;
 
     public GameObject bullet;
     public Vector3 bulletSpawnPoint;
     private Quaternion bulletRotation;
+
+    float MinArduinoValue = 70; // Only accept values above 70 to avoid most value jumping
 
     // Axis value inputs to bools
     private void getAxisInputs()
@@ -28,15 +29,6 @@ public class GunController : MonoBehaviour {
         else
         {
             shootPressed = false;
-        }
-
-        if (Input.GetAxis("Reload") > 0)
-        {
-            reloadPressed = true;
-        }
-        else
-        {
-            reloadPressed = false;
         }
     }
 
@@ -99,7 +91,7 @@ public class GunController : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (FromArduino > 950)
+        if (FromArduino < 100 && FromArduino > MinArduinoValue) // Clicks into second peg section at around 100;
         {
             reload();
         }
