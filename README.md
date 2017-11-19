@@ -6,5 +6,6 @@ https://drive.google.com/open?id=1246o-MIuzpXWEzkH9QpzVAe61hRPY3Uj
 
 Progress videos are linked below:
 
-https://www.youtube.com/watch?v=xt4TcBBXAcA - First electronic prototype
-https://www.youtube.com/watch?v=oNCwUiPBJ60 - First mechanical prototype
+* [First electronic prototype](https://www.youtube.com/watch?v=xt4TcBBXAcA)
+* [First mechanical prototype](https://www.youtube.com/watch?v=oNCwUiPBJ60)
+* [First combination prototype](https://youtu.be/oeCGVCwy2tE)
