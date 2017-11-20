@@ -17,8 +17,6 @@ public class GunController : MonoBehaviour {
     public Vector3 bulletSpawnPoint;
     private Quaternion bulletRotation;
 
-    float MinArduinoValue = 70; // Only accept values above 70 to avoid most value jumping
-
     // Axis value inputs to bools
     private void getAxisInputs()
     {
@@ -81,7 +79,7 @@ public class GunController : MonoBehaviour {
 	void Update () {
 
         // Get potentiometer value
-        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
+        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().PotentiometerValue;
 
         getAxisInputs();
 
@@ -91,7 +89,7 @@ public class GunController : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (FromArduino < 100 && FromArduino > MinArduinoValue) // Clicks into second peg section at around 100;
+        if (FromArduino < 100) // Clicks into second peg section at around 100;
         {
             reload();
         }

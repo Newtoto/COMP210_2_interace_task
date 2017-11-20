@@ -6,22 +6,41 @@ using System.IO.Ports;
 public class ArduinoWatcherScript : MonoBehaviour {
 
     SerialPort ArduinoPort = new SerialPort("COM3", 9600);
-    public float potentiometerValue;
 
-    // Use this for initialization
+    // value accessed by other scripts
+    public float PotentiometerValue;
+
+    private string OutputFromArduino;
+
+    // Used to split arduino string for sanity check
+    private int CorrectPotentiometerLength;
+    private string PotentiometerString;
+
     void Start()
     {
         ArduinoPort.Open();
         ArduinoPort.ReadTimeout = 1;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (ArduinoPort.IsOpen)
             try
             {
-                potentiometerValue = float.Parse(ArduinoPort.ReadLine());
+                OutputFromArduino = ArduinoPort.ReadLine();
+
+                // Get the first number in arduino output for sanity checking
+                CorrectPotentiometerLength = int.Parse(OutputFromArduino.Substring(0, 1));
+
+                // Get rest of the arduino output as potentiometer value
+                PotentiometerString = OutputFromArduino.Substring(1, (OutputFromArduino.Length - 1));
+
+                // Check if potentiometer length matches what it should be
+                if (CorrectPotentiometerLength == PotentiometerString.Length)
+                {
+                    // Output if value is correct
+                    PotentiometerValue = float.Parse(PotentiometerString);
+                }
             }
             catch (System.Exception)
             {
