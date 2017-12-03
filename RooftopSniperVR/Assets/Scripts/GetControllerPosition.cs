@@ -11,12 +11,14 @@ public class GetControllerPosition : MonoBehaviour {
 	void Start () {
 		transform.position = RightController.transform.position + PositionAdjustment;
 		transform.rotation = RightController.transform.rotation;
-	}
+
+        var Rotation = Quaternion.Euler(0, RightController.transform.rotation.eulerAngles.y, 0); //transpose values
+        transform.rotation = Rotation;
+    }
 
 	// Update is called once per frame
 	void Update () {
-		var Rotation = Quaternion.Euler(0, RightController.transform.rotation.eulerAngles.y, 0); //transpose values
-		transform.rotation = Rotation;
+
 	}
 
 }
