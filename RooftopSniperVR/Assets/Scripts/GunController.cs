@@ -77,6 +77,12 @@ public class GunController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	
+	// Set bullet rotation to match the gun
+        bulletRotation = gameObject.transform.rotation;
+
+        // Set bullet spawn to location of spawn on gun object
+        bulletSpawnPoint = GameObject.Find("BulletSpawnPoint").transform.position;
 
         // Get potentiometer value
         FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().PotentiometerValue;
