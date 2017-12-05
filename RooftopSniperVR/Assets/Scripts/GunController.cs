@@ -7,6 +7,7 @@ public class GunController : MonoBehaviour {
     // Arduino values to detect reload
     public GameObject ArduinoWatcher;
     public float FromArduino;
+    public AudioSource reloadBackSound, reloadForwardSound, shootSound;
 
     private bool loaded = false;
 
@@ -37,10 +38,12 @@ public class GunController : MonoBehaviour {
         if (!loaded)
         {
             loaded = true;
+            reloadBackSound.Play();
             Debug.Log("Reloading");
         } else
         {
             Debug.Log("Gun is already loaded");
+            
         }
     }
 
@@ -52,8 +55,11 @@ public class GunController : MonoBehaviour {
             loaded = false;
             Debug.Log("Shooting");
             Instantiate(bullet, bulletSpawnPoint, bulletRotation);
+            shootSound.Play();
         } else
         {
+            // Plays not loaded sound
+            reloadForwardSound.Play();
             Debug.Log("Gun is not loaded");
         }
     }
@@ -95,7 +101,7 @@ public class GunController : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (FromArduino < 100) // Clicks into second peg section at around 100;
+        if (FromArduino < 100 && FromArduino > 0 || Input.GetKeyDown("r")) // Clicks into second peg section at around 100;
         {
             reload();
         }

@@ -21,12 +21,13 @@ public class GetControllerPosition : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+        // Calibrate position of the scene around the controller until C is pressed
 		if (Input.GetKeyDown("c"))
 		{
 			Debug.Log("Table calibrated");
 			calibrating = false;
 		}
-
 		if(calibrating)
 		{
 			//transpose values
