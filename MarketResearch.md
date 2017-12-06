@@ -59,3 +59,4 @@ These user stories are all set from the player's perspective.
 * I want to be able to feel the edge of the building, not just flat floor.
 * I want to feel the wind against me like on the top of a high building.
 * I want to be able to intuitively reload and fire the gun.
+* I want setup to be quick and easy
