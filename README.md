@@ -9,7 +9,7 @@ Progress videos are linked below:
 * [First electronic prototype](https://www.youtube.com/watch?v=xt4TcBBXAcA)
 * [First mechanical prototype](https://www.youtube.com/watch?v=oNCwUiPBJ60)
 * [First combination prototype](https://youtu.be/oeCGVCwy2tE)
-* [Improved mechanism](https://youtu.be/PdnhnfiuEVg)
+* [Improved mechanism with trigger](https://youtu.be/PdnhnfiuEVg)
 
 
 Sniper model by Kyenzie https://poly.google.com/view/fKsTWWhSkqt
