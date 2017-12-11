@@ -9,6 +9,11 @@ public class GunController : MonoBehaviour {
     public float FromArduino;
     public AudioSource reloadBackSound, reloadForwardSound, shootSound;
 
+    // Vive tracker variables
+    private SteamVR_TrackedObject trackedObject;
+    public bool trigger;
+    public bool reloader;
+
     private bool loaded = false;
 
     // Used to only detect axis
@@ -66,6 +71,8 @@ public class GunController : MonoBehaviour {
 
 
 	void Start () {
+        // Init vive tracker
+        trackedObject = GetComponent<SteamVR_TrackedObject>();
 
         // Check if bullet is attatched to gun
         if (bullet == null)
@@ -83,8 +90,16 @@ public class GunController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	// Set bullet rotation to match the gun
+        // Get input from vive tracker pins
+        var device = SteamVR_Controller.Input((int)trackedObject.index);
+
+        // pin 2 -> 4
+        trigger = device.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
+
+        // pin 2 -> 3
+        reloader = device.GetPress(Valve.VR.EVRButtonId.k_EButton_Grip);
+
+	    // Set bullet rotation to match the gun
         bulletRotation = gameObject.transform.rotation;
 
         // Set bullet spawn to location of spawn on gun object
