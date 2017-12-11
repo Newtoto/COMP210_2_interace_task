@@ -51,13 +51,3 @@ The vive tracker allows for the tracking of any object it is attached to. In the
 
 ## Guns in VR
 For most VR gun games involving guns, such as <a href="http://store.steampowered.com/app/450540/Hot_Dogs_Horseshoes__Hand_Grenades/">Hot Dogs, Horseshoes and Handgrenades</a>, and <a href="http://store.steampowered.com/app/617830/SUPERHOT_VR/">Super Hot VR</a>, the standard vive controllers are used. This means that reloading and firing a gun only offers vibration as feedback. For my experience, it can also be fiddly to operate. Using the VR tracker on a real life gun model will give fully tactile feedback for reloading. The vibration feedback that is usually found in shooting VR games feels a bit unrealistic. This is why I propose to have a physical mechanism inside the gun which fires a projectile forward, giving the gun a more realistic feeling kickback.
-
-## User Stories
-These user stories are all set from the player's perspective.
-* As someone who is sensitive to VR, I don't want to feel nauseous while playing.
-* I want to be able to feel more like I'm firing a real gun than in other VR shooting games.
-* I want to be able to feel the edge of the building, not just flat floor.
-* I want to feel the wind against me like on the top of a high building.
-* I want to be able to intuitively reload and fire the gun.
-* I want setup to be quick and easy
-* I don't want to feel restricted by wires
