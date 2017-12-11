@@ -1,5 +1,11 @@
 # COMP210_2_interace_task
 
+## Links to research
+* [Market research](https://github.com/Newtoto/COMP210_2_interace_task/blob/master/MarketResearch.md)
+* [The proposal](https://github.com/Newtoto/COMP210_2_interace_task/blob/master/VRProposal.md)
+* [User stories](https://github.com/Newtoto/COMP210_2_interace_task/blob/master/UserStories.MD)
+
+## Progress pictures and videos
 Progress pictures can be found in this google drive folder:
 
 https://drive.google.com/open?id=1246o-MIuzpXWEzkH9QpzVAe61hRPY3Uj
