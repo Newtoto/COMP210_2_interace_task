@@ -6,6 +6,7 @@ public class GunController : MonoBehaviour {
 
     // Arduino values to detect reload
     public GameObject ArduinoWatcher;
+    public GameObject viveTracker;
     public float FromArduino;
     public AudioSource reloadBackSound, reloadForwardSound, shootSound;
 
@@ -72,7 +73,7 @@ public class GunController : MonoBehaviour {
 
 	void Start () {
         // Init vive tracker
-        trackedObject = GetComponent<SteamVR_TrackedObject>();
+        trackedObject = viveTracker.GetComponent<SteamVR_TrackedObject>();
 
         // Check if bullet is attatched to gun
         if (bullet == null)

@@ -18,14 +18,14 @@ public class Reload : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().PotentiometerValue;
-
+        TargetPosition = new Vector3(0.05f, -0.03f, -0.08f);
         // Move reload in line with potentiometer position
-        if (FromArduino % 2 == 0)
-        {
-            TargetPosition = new Vector3(0.0f, 0.0f, FromArduino / 8000);
+        //if (FromArduino % 2 == 0)
+        //{
+        //    TargetPosition = new Vector3(0.051f, -0.015f, -0.079f + (FromArduino / 8000));
 
-            gameObject.transform.localPosition -= TargetPosition + gameObject.transform.localPosition;
-        }
+        //    gameObject.transform.localPosition -= TargetPosition + gameObject.transform.localPosition;
+        //}
 
         //PreviousPotentiometerValue = FromArduino;
     }
