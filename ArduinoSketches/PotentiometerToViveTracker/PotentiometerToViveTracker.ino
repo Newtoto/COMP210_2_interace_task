@@ -66,5 +66,9 @@ void loop() {
   digitalWrite(outputPin, HIGH);
   Serial.begin(9600);
   Serial.println(1);
+  Serial.flush();
+  delay(Delay);
+  Serial.println(0);
+  Serial.flush();
   delay(Delay);
 }
