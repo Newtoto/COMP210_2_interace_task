@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
 
+
 public class ArduinoWatcherScript : MonoBehaviour {
+
+    public static string[] ports = SerialPort.GetPortNames();
 
     SerialPort ArduinoPort = new SerialPort("COM3", 9600);
 
@@ -23,6 +26,11 @@ public class ArduinoWatcherScript : MonoBehaviour {
 
     void Start()
     {
+        for (var i = 0; i < ports.Length; i++)
+        {
+            Debug.Log(ports[i]);
+        }
+
         ArduinoPort.Open();
         ArduinoPort.ReadTimeout = 1;
     }
