@@ -99,7 +99,7 @@ public class GunTest : MonoBehaviour {
         bulletSpawnPoint = GameObject.Find("BulletSpawnPoint").transform.position;
 
         // Get potentiometer value
-        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().PotentiometerValue;
+        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
 
         getAxisInputs();
 

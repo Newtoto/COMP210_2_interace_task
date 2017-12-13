@@ -107,12 +107,12 @@ public class GunController : MonoBehaviour {
         bulletSpawnPoint = GameObject.Find("BulletSpawnPoint").transform.position;
 
         // Get potentiometer value
-        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().PotentiometerValue;
+        FromArduino = ArduinoWatcher.GetComponent<ArduinoWatcherScript>().potentiometerValue;
 
         getAxisInputs();
 
         // Detect firing input
-        if (shootPressed)
+        if (shootPressed || trigger)
         {
             shoot();
         }
