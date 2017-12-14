@@ -16,6 +16,7 @@ Progress videos are linked below:
 * [First mechanical prototype](https://www.youtube.com/watch?v=oNCwUiPBJ60)
 * [First combination prototype](https://youtu.be/oeCGVCwy2tE)
 * [Improved mechanism with trigger](https://youtu.be/PdnhnfiuEVg)
+* [Final model](https://youtu.be/gr-kvOjI5A4)
 
 ## Credit for In-game Models
 * Sniper model by Kyenzie https://poly.google.com/view/fKsTWWhSkqt
