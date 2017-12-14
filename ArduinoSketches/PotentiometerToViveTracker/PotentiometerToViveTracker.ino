@@ -1,6 +1,5 @@
 const int Potentiometer = {A0};
-int outputPin = {13};
-int Delay;
+int outputValue;
 
 
 void setup() {
@@ -12,63 +11,59 @@ void loop() {
   
   digitalWrite(13, HIGH);
   if (analogRead(Potentiometer) > 1020){
-    Delay = 20;
+    outputValue = 20;
   }
   else if (analogRead(Potentiometer) > 1012){
-    Delay = 19;
+    outputValue = 19;
   }
   else if (analogRead(Potentiometer) > 986){
-    Delay = 18;
+    outputValue = 18;
   }
   else if (analogRead(Potentiometer) > 960){
-    Delay = 17;
+    outputValue = 17;
   }
   else if (analogRead(Potentiometer) > 916){
-    Delay = 16;
+    outputValue = 16;
   }
   else if (analogRead(Potentiometer) > 872){
-    Delay = 15;
+    outputValue = 15;
   }
   else if (analogRead(Potentiometer) > 816){
-    Delay = 14;
+    outputValue = 14;
   }
   else if (analogRead(Potentiometer) > 756){
-    Delay = 13;
+    outputValue = 13;
   }
   else if (analogRead(Potentiometer) > 682){
-    Delay = 12;
+    outputValue = 12;
   }
   else if (analogRead(Potentiometer) > 610){
-    Delay = 11;
+    outputValue = 11;
   }
   else if (analogRead(Potentiometer) > 546){
-    Delay = 10;
+    outputValue = 10;
   }
   else if (analogRead(Potentiometer) > 466){
-    Delay = 9;
+    outputValue = 9;
   }
   else if (analogRead(Potentiometer) > 360){
-    Delay = 8;
+    outputValue = 8;
   }
   else if (analogRead(Potentiometer) > 240){
-    Delay = 7;
+    outputValue = 7;
   }
   else if (analogRead(Potentiometer) > 122){
-    Delay = 6;
+    outputValue = 6;
   }
   else if (analogRead(Potentiometer) > 20){
-    Delay = 5;
+    outputValue = 5;
   }
   else {
-    Delay = 4;
+    outputValue = 4;
   }
 
-  digitalWrite(outputPin, HIGH);
   Serial.begin(9600);
-  Serial.println(1);
+  Serial.println(outputValue);
   Serial.flush();
-  delay(Delay);
-  Serial.println(0);
-  Serial.flush();
-  delay(Delay);
+  delay(20);
 }
