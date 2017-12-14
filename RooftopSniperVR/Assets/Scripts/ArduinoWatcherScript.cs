@@ -2,67 +2,68 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO.Ports;
+using UnityEngine.UI;
 
 
 public class ArduinoWatcherScript : MonoBehaviour {
 
-    public static string[] ports = SerialPort.GetPortNames();
+    [SerializeField]
+    private InputField COMPortInput;
 
-    SerialPort ArduinoPort = new SerialPort("COM3", 9600);
+    private bool portSubmitted;
+
+    SerialPort ArduinoPort;
 
     // value accessed by other scripts
     public float potentiometerValue;
 
     public string outputFromArduino;
 
-    public float outputFrequency;
-
-    public float counter;
-    public float tick;
-
     // Used to split arduino string for sanity check
     private int CorrectPotentiometerLength;
     private string potentiometerString;
 
-    void Start()
+    public void GetPortFromUser()
     {
-        for (var i = 0; i < ports.Length; i++)
-        {
-            Debug.Log(ports[i]);
-        }
-
+        // Open port
+        ArduinoPort = new SerialPort(COMPortInput.text, 9600);
         ArduinoPort.Open();
         ArduinoPort.ReadTimeout = 1;
+        portSubmitted = true;
+
+        // Disable canvas to make UI disappear
+        COMPortInput.GetComponentInParent<Canvas>().enabled = false;
+    }
+
+    void Start()
+    {
+        portSubmitted = false;
+        //ArduinoPort = new SerialPort("COM3", 9600);
+        //ArduinoPort.Open();
+        //ArduinoPort.ReadTimeout = 1;
     }
 
     void Update()
     {
-        tick += 1;
-
-        if (ArduinoPort.IsOpen)
-            try
-            {
-                outputFromArduino = ArduinoPort.ReadLine();
-                potentiometerValue = float.Parse(outputFromArduino);
-
-            }
-            catch (System.Exception)
-            {
-
-            }
-
-        if (potentiometerValue == 1)
+        if (portSubmitted)
         {
-            counter += 1;
+            if (ArduinoPort.IsOpen)
+                try
+                {
+                    outputFromArduino = ArduinoPort.ReadLine();
+                    potentiometerValue = float.Parse(outputFromArduino);
+
+                }
+                catch (System.Exception)
+                {
+
+                }
         }
 
-        if(tick == 100)
+        // Open COM port input field
+        if (Input.GetKeyDown("c"))
         {
-            outputFrequency = counter / tick;
-            counter = 0;
-            tick = 0;
+            COMPortInput.GetComponentInParent<Canvas>().enabled = true;
         }
-
-        potentiometerValue = 0;
     }
 }
