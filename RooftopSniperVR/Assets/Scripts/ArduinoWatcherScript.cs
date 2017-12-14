@@ -51,8 +51,10 @@ public class ArduinoWatcherScript : MonoBehaviour {
                 try
                 {
                     outputFromArduino = ArduinoPort.ReadLine();
-                    potentiometerValue = float.Parse(outputFromArduino);
-
+                    if (float.Parse(outputFromArduino) > 3)
+                    {
+                        potentiometerValue = float.Parse(outputFromArduino);
+                    }
                 }
                 catch (System.Exception)
                 {

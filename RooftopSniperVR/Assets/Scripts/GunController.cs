@@ -13,7 +13,7 @@ public class GunController : MonoBehaviour {
     // Vive tracker variables
     private SteamVR_TrackedObject trackedObject;
     public bool trigger;
-    public bool reloader;
+    //public bool reloader;
 
     private bool loaded = false;
 
@@ -97,8 +97,8 @@ public class GunController : MonoBehaviour {
         // pin 2 -> 4
         trigger = device.GetPress(Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger);
 
-        // pin 2 -> 3
-        reloader = device.GetPress(Valve.VR.EVRButtonId.k_EButton_Grip);
+        //// pin 2 -> 3
+        //reloader = device.GetPress(Valve.VR.EVRButtonId.k_EButton_Grip);
 
 	    // Set bullet rotation to match the gun
         bulletRotation = gameObject.transform.rotation;
@@ -117,7 +117,7 @@ public class GunController : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (FromArduino < 100 && FromArduino > 0 || Input.GetKeyDown("r")) // Clicks into second peg section at around 100;
+        if (FromArduino < 6 && FromArduino > 3 || Input.GetKeyDown("r")) // Clicks into second peg section at around 100;
         {
             reload();
         }

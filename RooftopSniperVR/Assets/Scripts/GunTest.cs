@@ -12,7 +12,7 @@ public class GunTest : MonoBehaviour {
     // Vive tracker variables
     private SteamVR_TrackedObject trackedObject;
     public bool trigger;
-    public bool reloader;
+    //public bool reloader;
 
     private bool loaded = false;
 
@@ -56,8 +56,9 @@ public class GunTest : MonoBehaviour {
     // Spawn bullet and require reload
     private void shoot()
     {
-        if (loaded)
+        if (loaded && FromArduino > 18)
         {
+            // Fire bullet and play sound if reload is forward
             loaded = false;
             Debug.Log("Shooting");
             Instantiate(bullet, bulletSpawnPoint, bulletRotation);
@@ -109,7 +110,7 @@ public class GunTest : MonoBehaviour {
             shoot();
         }
         // Detect reload input
-        if (FromArduino < 100 && FromArduino > 0 || Input.GetKeyDown("r")) // Clicks into second peg section at around 100;
+        if (FromArduino < 6 && FromArduino > 3 || Input.GetKeyDown("r")) // Clicks into second peg section at around 100;
         {
             reload();
         }
