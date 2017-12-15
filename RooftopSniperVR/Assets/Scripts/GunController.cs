@@ -41,13 +41,12 @@ public class GunController : MonoBehaviour {
     // Reload the gun
     private void reload()
     {
-        if (loaded && FromArduino > 6)
+        if (!loaded)
         {
             // Fire bullet and play sound if reload is forward
-            loaded = false;
-            Debug.Log("Shooting");
-            Instantiate(bullet, bulletSpawnPoint, bulletRotation);
-            shootSound.Play();
+            loaded = true;
+            Debug.Log("reloading");
+            reloadBackSound.Play();
         }
         else
         {
@@ -60,7 +59,7 @@ public class GunController : MonoBehaviour {
     // Spawn bullet and require reload
     private void shoot()
     {
-        if (loaded)
+        if (loaded && FromArduino > 6)
         {
             loaded = false;
             Debug.Log("Shooting");
