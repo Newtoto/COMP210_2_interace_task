@@ -17,6 +17,7 @@ Progress videos are linked below:
 * [First combination prototype](https://youtu.be/oeCGVCwy2tE)
 * [Improved mechanism with trigger](https://youtu.be/PdnhnfiuEVg)
 * [Final model](https://youtu.be/gr-kvOjI5A4)
+* [VR game demo](https://youtu.be/TmrW0BKJ8Io)
 
 ## Credit for In-game Models
 * Sniper model by Kyenzie https://poly.google.com/view/fKsTWWhSkqt
