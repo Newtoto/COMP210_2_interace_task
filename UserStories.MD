@@ -7,5 +7,5 @@
 * **I want to be able to feel surfaces that I can see in the game.** - The edge of the building aligns with the table so that can be felt, and the gun will be a real model with a vive tracker meaning that that can be felt.
 * **I want multiple forms of feedback which relate to the setting.** - A desk fan will be used to create the wind on the rooftop, as well as audio for wind and gun sounds.
 * **I want to be able to intuitively reload and fire the gun.** - By using a gun model mirroring the in-game model to the best of my ability, the interaction will be more intuitive than trying to operate a gun using the vive controllers.
-* **I don't want to feel restricted by wires.** - Aside from the headset wires which I am unable to change, there will be no other wires which tether the user to the computer. I will do this by sending any data across wirelessly via the vive tracker.
+* **I don't want to feel restricted by wires.** - I will make sure that the wires connecting the Arduino to the computer will be long enough, since this is a game without much movement wires are less of an issue. Ideally I would have sent the signal through the vive tracker, however it doesn't have analogue input and the digital output wasn't consistant enough to use the output frequency to calculate the reload position.
 
